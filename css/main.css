@@ -30,6 +30,33 @@ header ul {
 header p {
     margin: 0;
 }
-header .container {
+header .container:not(nav), nav.container ul {
     display: flex;
+    justify-content: space-between;
+}
+header > .container > * {
+    display: flex;
+}
+header div.container, header ul.container, .just-sb {
+    justify-content: space-between;
+}
+header img { width: 70px;}
+
+header ul.container {
+    /* justify-content: space-between; */
+    /* align-items: center; */
+}
+header ul.container li:nth-child(3) {
+    width: 50%;
+}
+header ul.container li:first-of-type {
+    margin-left: 50px;
+}
+input { width: 100%;}
+ul.container li *:not(img) {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
